@@ -11,9 +11,19 @@ function searchNationalPark(state) {
         type: "GET",
         url: `https://developer.nps.gov/api/v1/parks?stateCode=${state}&stateCode=&api_key=I7qeJmQumHGPtOSAaV4GqitG18NPnFk01uOCalSh`,
         dataType: "json",
-    }).then(function(data) {
-        console.log(data);
-    })
-};
+    }).then(function(response) {
+        console.log(response);
+    $(".waterGapText").text(response.data[2].description)
+    $(".pattersonFallsText").text(response.data[9].description)
+    $(".ellisIslandText").text(response.data[3].description)
+    $(".estellManorText").text(response.data[5].description)
+    $(".morristownText").text(response.data[7].description)
+    $(".pinelandsText").text(response.data[8].description)
 
+
+
+
+
+});
+}
 searchNationalPark();
