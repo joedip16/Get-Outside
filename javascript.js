@@ -19,14 +19,14 @@ function searchNationalPark(state) {
 searchNationalPark();
 
 
-function fiveDayWeather (city) {
+function fiveDayWeather() {
 
-    city = "Morristown";
+    // city = "morristown";
     // var apiKey= "e8bb5a6ba8f08e6e176eb848cae16ef7"
 
     $.ajax({
         method: "GET",
-        url: `api.openweathermap.org/data/2.5/forecast?q=${city}&appid=e8bb5a6ba8f08e6e176eb848cae16ef7`,
+        url: "http://api.openweathermap.org/data/2.5/forecast?q=Morristown&appid=b0d55d94d45640643224cf884f17469a",
         dataType: "json",
     }).then(function(response){
         console.log(response);
