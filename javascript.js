@@ -2,11 +2,6 @@ var hello = "hello"
 
 // manoli is awesome
 
-var man = "woman"
-var women = "man"
-
-// "https://www.hikingproject.com/data/get-trails?lat=40.0583&lon=74.4057&maxDistance=10&key=200970119-76c616d7fe6494bc98bdcc7bc2b32137"
-
 
 function searchNationalPark(state) {
 
