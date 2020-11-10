@@ -1,0 +1,29 @@
+MAKE SURE PROJECT IS MORE THAN a homeWORK. PUT IN THE TIME PLEASE
+
+
+index.html
+1. In the index.html, try to use the API that is being called to grab images to place in approioate spot. 
+2. create ids maybe to place the desciption from ap in. look at weather dashboard
+4. apply a footer that reveals credit to individuals(teamates)
+5. Look up ways to make UI reponsive/interactive
+
+
+
+
+
+
+js.
+1.js.js create the path or location to pull that image. refer back to nytimes example or weather board.
+2. create a way to fetch data from object
+3. set up weather API with the location of the park. look up if necessary
+
+
+
+
+css.
+1. make jumbotron interactive. make it look cool
+2. look up how to add another component with bootstrap aka cdn
+
+
+
+
