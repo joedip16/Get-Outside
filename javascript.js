@@ -1,4 +1,4 @@
-var hello = "hello"
+var hello = "yellow"
 
 // manoli is awesome
 
