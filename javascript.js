@@ -19,7 +19,18 @@ function searchNationalPark(state) {
     $(".estellManorText").text(response.data[5].description)
     $(".morristownText").text(response.data[7].description)
     $(".pinelandsText").text(response.data[8].description)
-    });
+
+    $(".waterGapImg").attr(`src`, response.data[2].images[0].url)
+    $(".pattersonImg").attr(`src`, response.data[9].images[1].url)
+    $(".ellisImg").attr(`src`, response.data[3].images[0].url)
+    $(".estellImg").attr(`src`, response.data[5].images[4].url)
+    $(".morristownImg").attr(`src`, response.data[7].images[0].url)
+    $(".pinelandsImg").attr(`src`, response.data[8].images[0].url)
+
+
+
+});
+    
 }
 searchNationalPark();
 
