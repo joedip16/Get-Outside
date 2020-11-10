@@ -20,6 +20,16 @@ function searchNationalPark(state) {
     $(".morristownText").text(response.data[7].description)
     $(".pinelandsText").text(response.data[8].description)
 
+    var imgUrl = response.data[9].images[0].url
+    $(".patterson-pic").text(response.data[9].images[0].url)
+    $(".pinelandsText").text(response.data[8].description)
+    $(".pinelandsText").text(response.data[8].description)
+    $(".pinelandsText").text(response.data[8].description)
+    $(".pinelandsText").text(response.data[8].description)
+    $(".pinelandsText").text(response.data[8].description)
+    
+
+
 
 
 
