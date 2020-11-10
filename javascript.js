@@ -19,11 +19,6 @@ function searchNationalPark(state) {
     $(".estellManorText").text(response.data[5].description)
     $(".morristownText").text(response.data[7].description)
     $(".pinelandsText").text(response.data[8].description)
-
-
-
-
-
 });
 }
 searchNationalPark();
