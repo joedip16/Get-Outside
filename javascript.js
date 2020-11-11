@@ -8,7 +8,7 @@ function searchNationalPark(state) {
     state = "nj";
 
     $.ajax({
-       method: "GET",
+    method: "GET",
         url: `https://developer.nps.gov/api/v1/parks?stateCode=${state}&stateCode=&api_key=I7qeJmQumHGPtOSAaV4GqitG18NPnFk01uOCalSh`,
         dataType: "json",
     }).then(function(response) {
@@ -53,7 +53,7 @@ function fiveDayWeather() {
             
             console.log(data.city.name);   
             var title = $("<h5>").addClass("card-title").text(data.city.name);
-            var card = $("<div>").addClass("card col-md-2 fiveDay");
+            var card = $("<div>").addClass("card fiveDay");
             var temp = $("<p>").addClass("card-text").text(`Temperature : ${data.list[i].main.temp}`);
             var wind = $("<p>").addClass("card-text").text(`Wind Speed: ${data.list[i].wind.speed}`);
             var humidity = $("<p>").addClass("card-text").text(`Humidity: ${data.list[i].main.humidity}`);
@@ -62,8 +62,14 @@ function fiveDayWeather() {
             cardBody.append(title, temp, wind, humidity);
             card.append(cardBody);
             $("#forecast").append(card);
+
+
+                $(".modal .modal-content .modal-body").append(card);
+
+
+
         }
     })
 }
 
-// fiveDayWeather();
+fiveDayWeather();
