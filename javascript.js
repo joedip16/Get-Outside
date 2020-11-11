@@ -8,7 +8,7 @@ function searchNationalPark(state) {
     state = "nj";
 
     $.ajax({
-       method: "GET",
+    method: "GET",
         url: `https://developer.nps.gov/api/v1/parks?stateCode=${state}&stateCode=&api_key=I7qeJmQumHGPtOSAaV4GqitG18NPnFk01uOCalSh`,
         dataType: "json",
     }).then(function(response) {
@@ -67,5 +67,3 @@ function fiveDayWeather() {
 }
 
 // fiveDayWeather();
-
-
