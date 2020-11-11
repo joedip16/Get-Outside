@@ -57,3 +57,10 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.btn-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+}
