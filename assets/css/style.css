@@ -1,5 +1,5 @@
 .background {
-    background-color: forestgreen;
+    /* background-color: forestgreen; */
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -7,8 +7,13 @@
 
 .lead {
     text-align: center;
+}
 
-
+.jumbotron {
+    /* height: 200px; */
+    height: 30vh;
+    background: url('https://static.onecms.io/wp-content/uploads/sites/34/2019/07/25145747/fall-foliage-header-getty-0719.jpg') no-repeat fixed;
+    background-size: cover;
 
 
 }
@@ -51,4 +56,11 @@
     height: 275px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.btn-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
 }
