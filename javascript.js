@@ -43,9 +43,27 @@ function fiveDayWeather() {
         method: "GET",
         url: "http://api.openweathermap.org/data/2.5/forecast?q=Morristown&appid=b0d55d94d45640643224cf884f17469a",
         dataType: "json",
-    }).then(function(response){
-        console.log(response);
+    }).then(function(data){
+        console.log(data);
+
+        console.log(data);
+        console.log(data.list.length);
+
+            for (var i = 0; i < data.list.length; i+=8){
+            
+            console.log(data.city.name);   
+            var title = $("<h5>").addClass("card-title").text(data.city.name);
+            var card = $("<div>").addClass("card col-md-2 fiveDay");
+            var temp = $("<p>").addClass("card-text").text(`Temperature : ${data.list[i].main.temp}`);
+            var wind = $("<p>").addClass("card-text").text(`Wind Speed: ${data.list[i].wind.speed}`);
+            var humidity = $("<p>").addClass("card-text").text(`Humidity: ${data.list[i].main.humidity}`);
+
+            var cardBody = $("<div>").addClass("card-body");
+            cardBody.append(title, temp, wind, humidity);
+            card.append(cardBody);
+            $("#forecast").append(card);
+        }
     })
 }
 
-fiveDayWeather();
+// fiveDayWeather();
