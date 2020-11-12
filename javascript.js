@@ -56,14 +56,14 @@ function searchNationalPark(state) {
 }
 searchNationalPark();
 
-function fiveDayWeatherMotown(city) {
+function fiveDayWeatherMotown(cityName) {
 
     // city = $();
     // var apiKey= "e8bb5a6ba8f08e6e176eb848cae16ef7"
 
     $.ajax({
         method: "GET",
-        url: `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=b0d55d94d45640643224cf884f17469a`,
+        url: `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=b0d55d94d45640643224cf884f17469a&units=imperial`,
         dataType: "json",
     }).then(function(data){
         console.log(data);
@@ -71,6 +71,7 @@ function fiveDayWeatherMotown(city) {
         console.log(data);
         console.log(data.list.length);
 
+            $("#weatherMotown").empty();
             for (var i = 0; i < data.list.length; i+=8){
             
             console.log(data.city.name);   
