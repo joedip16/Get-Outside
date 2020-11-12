@@ -49,6 +49,13 @@ function searchNationalPark(state) {
     $(".morristownImg").attr(`src`, response.data[7].images[0].url)
     $(".pinelandsImg").attr(`src`, response.data[8].images[0].url)
 
+    $(".greatEggHarbor").attr(`href`, response.data[5].url)
+    $(".delWaterGap").attr(`href`, response.data[2].url)
+    $(".padGreatFalls").attr(`href`, response.data[9].url)
+    $(".ellisIsl").attr(`href`, response.data[3].url)
+    $(".morTown").attr(`href`, response.data[7].url)
+    $(".pineLand").attr(`href`, response.data[8].url)
+
 
 
 });
@@ -56,14 +63,14 @@ function searchNationalPark(state) {
 }
 searchNationalPark();
 
-function fiveDayWeatherMotown(city) {
+function fiveDayWeatherMotown(cityName) {
 
     // city = $();
     // var apiKey= "e8bb5a6ba8f08e6e176eb848cae16ef7"
 
     $.ajax({
         method: "GET",
-        url: `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=b0d55d94d45640643224cf884f17469a`,
+        url: `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=b0d55d94d45640643224cf884f17469a&units=imperial`,
         dataType: "json",
     }).then(function(data){
         console.log(data);
@@ -71,6 +78,7 @@ function fiveDayWeatherMotown(city) {
         console.log(data);
         console.log(data.list.length);
 
+            $("#weatherMotown").empty();
             for (var i = 0; i < data.list.length; i+=8){
             
             console.log(data.city.name);   
