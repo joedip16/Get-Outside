@@ -49,6 +49,13 @@ function searchNationalPark(state) {
     $(".morristownImg").attr(`src`, response.data[7].images[0].url)
     $(".pinelandsImg").attr(`src`, response.data[8].images[0].url)
 
+    $(".greatEggHarbor").attr(`href`, response.data[5].url)
+    $(".delWaterGap").attr(`href`, response.data[2].url)
+    $(".padGreatFalls").attr(`href`, response.data[9].url)
+    $(".ellisIsl").attr(`href`, response.data[3].url)
+    $(".morTown").attr(`href`, response.data[7].url)
+    $(".pineLand").attr(`href`, response.data[8].url)
+
 
 
 });
