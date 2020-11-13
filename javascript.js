@@ -1,5 +1,5 @@
 var hello = "yellow"
-
+var target = "_blank"
 // manoli is awesome
 
 
@@ -56,6 +56,12 @@ function searchNationalPark(state) {
     $(".morTown").attr(`href`, response.data[7].url)
     $(".pineLand").attr(`href`, response.data[8].url)
 
+    $(".morTown").attr("target", target);
+    $(".delWaterGap").attr("target", target);
+    $(".padGreatFalls").attr("target", target);
+    $(".ellisIsl").attr("target", target);
+    $(".pineLand").attr("target", target);
+    $(".greatEggHarbor").attr("target", target);
 
 
 });
