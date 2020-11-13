@@ -132,3 +132,10 @@ function weatherGap() {
     })
 }
 // weatherGap();
+
+function compareClick() {
+
+
+    
+    var counter = $(this).attr()
+}
