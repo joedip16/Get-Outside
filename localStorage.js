@@ -1,8 +1,8 @@
 $(document).ready(function() {
     var getColor;
-    if (localStorage.getItem('background') !== null) {
+    if (localStorage.getItem("background") !== null) {
       getColor = localStorage.background;
-      $('.gap-btn').css('background-color', getColor);
+      $(".gap-btn").css("background-color", getColor);
     }
   
     $(".gap-btn").on('click', function() {
