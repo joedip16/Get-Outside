@@ -1,39 +1,66 @@
 $(document).ready(function() {
-    var getColor;
-    if (localStorage.getItem("knowlton") !== null) {
-      getColor = localStorage.getItem("knowlton");
-      console.log(getColor)
-      $(".learn-more-btn").each(function(){
-          $
-        //   get id of $(this)
-        // check local storage
+    $(".learn-more-btn").each(function () {
+        //get id of the element and store it in a variable
+        var learnMoreBtn = document.querySelector(".learn-more-btn")
+        //use the id to get the color from local storage and store it in a variable
+        var getColor = localStorage.getItem(".learn-more-btn")
+        //update the background of the element to be the local storage color
+        $(this).css("background-color", null);
 
 
-        
-        // .css("background-color", getColor);
-      })
-      $(".learn-more-btn").on('click', function() {
-        if (getColor !== null) {
-          getColor = 'yellow';
-          $(this).css('background-color', 'yellow');
-          console.log(this)
-          var city = $(this).attr("id")
-          localStorage.setItem(city, 'yellow');
-        } 
-      // else {
-      //     getColor = 'yellow';
-      //     $('.gap-btn').css('background-color', 'yellow');
-      //     localStorage.setItem('background', 'yellow');
-      //     console.log("hello")
-      //   }
       });
+    
+      $(".learn-more-btn").on("click", function () { 
+        //set the background yellow 
+        $(this).css("background-color", "yellow"); 
+        
+        
+        //get id of the element and store it in a variable
+        var city = $(this).attr("id");  
+    
+        //use the id to add the color to local storage
+        localStorage.setItem(city, "yellow"); 
+      });
+    });
+    
+
+
+
+    // var getColor;
+    // if (localStorage.getItem("knowlton") !== null) {
+    //   getColor = localStorage.getItem("knowlton");
+    //   console.log(getColor)
+    //   $(".learn-more-btn").each(function(){
+    //       $
+    //     //   get id of $(this)
+    //     // check local storage
+
+
+
+    //     // .css("background-color", getColor);
+    //   })
+    //   $(".learn-more-btn").on('click', function() {
+    //     if (getColor !== null) {
+    //       getColor = 'yellow';
+    //       $(this).css('background-color', 'yellow');
+    //       console.log(this)
+    //       var city = $(this).attr("id")
+    //       localStorage.setItem(city, 'yellow');
+    //     } 
+    //   // else {
+    //   //     getColor = 'yellow';
+    //   //     $('.gap-btn').css('background-color', 'yellow');
+    //   //     localStorage.setItem('background', 'yellow');
+    //   //     console.log("hello")
+    //   //   }
+    //   });
 
     
-    }
+    // }
   
   
     
-  });
+//   });
 
 
 
