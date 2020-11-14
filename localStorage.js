@@ -1,22 +1,37 @@
 $(document).ready(function() {
     var getColor;
-    if (localStorage.getItem("background") !== null) {
-      getColor = localStorage.background;
-      $(".gap-btn").css("background-color", getColor);
+    if (localStorage.getItem("knowlton") !== null) {
+      getColor = localStorage.getItem("knowlton");
+      console.log(getColor)
+      $(".learn-more-btn").each(function(){
+          $
+        //   get id of $(this)
+        // check local storage
+
+
+        
+        // .css("background-color", getColor);
+      })
+      $(".learn-more-btn").on('click', function() {
+        if (getColor !== null) {
+          getColor = 'yellow';
+          $(this).css('background-color', 'yellow');
+          console.log(this)
+          var city = $(this).attr("id")
+          localStorage.setItem(city, 'yellow');
+        } 
+      // else {
+      //     getColor = 'yellow';
+      //     $('.gap-btn').css('background-color', 'yellow');
+      //     localStorage.setItem('background', 'yellow');
+      //     console.log("hello")
+      //   }
+      });
+
+    
     }
   
-    $(".gap-btn").on('click', function() {
-      if (getColor !== null) {
-        getColor = 'yellow';
-        $(".gap-btn").css('background-color', 'yellow');
-        localStorage.setItem('background', 'yellow');
-      } 
-    // else {
-    //     getColor = 'yellow';
-    //     $('.gap-btn').css('background-color', 'yellow');
-    //     localStorage.setItem('background', 'yellow');
-    //   }
-    });
+  
     
   });
 
