@@ -1,6 +1,5 @@
-var hello = "yellow"
 var target = "_blank"
-// manoli is awesome
+
 window.onload=function()
 {
      $("#morristown").css("background-color",localStorage.getItem("morristown"));
@@ -10,7 +9,6 @@ window.onload=function()
      $("#woodbine").css("background-color",localStorage.getItem("woodbine"));
      $("#new-libson").css("background-color",localStorage.getItem("new-libson"));
 }
-
 
 $(".my-modal").on("click", function(event){
 
