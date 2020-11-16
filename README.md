@@ -25,8 +25,6 @@
        was obtained from Openweather API.</li>
         <li>The use of modals was very tricky because we encountered a problem that would create a event bubbling. The modal
         system we used already had an event listner built in so had to figure out a way to solve it so we did.</li>
-        <li></li>
-        <li></li>
     </ol>
 
 
