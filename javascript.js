@@ -1,7 +1,15 @@
 var hello = "yellow"
 var target = "_blank"
 // manoli is awesome
-
+window.onload=function()
+{
+     $("#morristown").css("background-color",localStorage.getItem("morristown"));
+     $("#knowlton").css("background-color",localStorage.getItem("knowlton"));
+     $("#patterson").css("background-color",localStorage.getItem("patterson"));
+     $("#hoboken").css("background-color",localStorage.getItem("hoboken"));
+     $("#woodbine").css("background-color",localStorage.getItem("woodbine"));
+     $("#new-libson").css("background-color",localStorage.getItem("new-libson"));
+}
 
 
 $(".my-modal").on("click", function(event){
